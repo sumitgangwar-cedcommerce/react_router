@@ -1,0 +1,79 @@
+body{
+  background-color: #D8DFE6;
+  /* background-image: url('https://variety.com/wp-content/uploads/2018/10/drive.jpg');
+  background-repeat: no-repeat;
+  background-size:cover; */
+}
+body::after{
+  content: '';
+  background-image: url('https://variety.com/wp-content/uploads/2018/10/drive.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: absolute;
+  z-index:-2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  min-height: 100vh;
+}
+.App {
+  text-align: center;
+  overflow-x: hidden;
+}
+nav{
+  width: 100%;
+  background: linear-gradient(90deg, rgba(242,144,81,1) 0%, rgba(221,90,7,1) 35%, rgba(139,55,1,1) 100%);
+  opacity: 0.8;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 2vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  /* background:transparent; */
+  /* position: fixed; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#left{
+  font-weight: bolder;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img{
+  height: 80%;
+  width: 20%;
+}
+#front{
+
+  width: 40%;
+}
+a{
+  margin-right: 5vw;
+  text-decoration: none;
+  color: white;
+}
+
+#front-page{
+  padding-top: 10vw; 
+  /* height:100vh; */
+}
+
+.same{
+  margin-top: 10%;
+  color: #EA0B8C;
+  font-size: 10vw;
+  font-weight:900;
+}
+
+@media screen and  (max-width: 768px){
+  #front{
+    width: 100%;
+  }
+  #left{
+    width:100%;
+  }
+}
